@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Meta tags per la compatibilità e la visualizzazione su dispositivi mobili -->
     <meta charset="UTF-8">
@@ -8,9 +9,11 @@
     <title>Bozza Milestone</title>
 
     <!-- Link Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
 </head>
+
 <body>
 
     <!-- Header -->
@@ -25,12 +28,12 @@
                 <!-- Logo -->
                 <a class="navbar-brand" href="#">Bool Factory</a>
 
-    
+
                 <!-- Bottone toggle per dispositivi mobili -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-    
+
                 <!-- Menu di navigazione -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
@@ -61,11 +64,12 @@
 
             <!-- Row -->
             <div class="row gy-4 mt-1">
-                
+
                 <!-- Colonna 1 -->
                 <div class="col-12">
                     <h2 class=" fs-1">Richiesta Preventivo</h2>
-                    <p class="fs-5 mb-0">Compila il form per richiedere un preventivo per i nostri servizi di sviluppo.</p>
+                    <p class="fs-5 mb-0">Compila il form per richiedere un preventivo per i nostri servizi di sviluppo.
+                    </p>
                 </div>
                 <!-- Fine Colonna 1 -->
 
@@ -80,7 +84,7 @@
                             <label for="nome" class="form-label text-dark fs-5">Nome</label>
                             <input type="text" class="form-control" id="nome" required>
                         </div>
-        
+
                         <!-- Cognome -->
                         <div class="mb-3">
                             <label for="cognome" class="form-label text-dark fs-5">Cognome</label>
@@ -92,11 +96,21 @@
                             <label for="email" class="form-label text-dark fs-5">Email</label>
                             <input type="email" class="form-control" id="email" required>
                         </div>
-                        
 
-                         
+                        <!-- Select -->
+                        <div class="mb-3">
+                            <label for="select" class="form-label text-dark fs-5">Tipo di Lavoro</label>
+                            <select class="form-select" id="select" aria-label="Seleziona il tipo di lavoro" required>
+                                <option selected disabled hidden >Seleziona il tipo di lavoro</option>
+                                <option value="1">Backend Developement</option>
+                                <option value="2">Frontend Developement</option>
+                                <option value="3">Project Analysis</option>
+                            </select>
+                        </div>
+
+
                     </form>
-                     <!-- Fine Form -->
+                    <!-- Fine Form -->
 
                 </div>
                 <!-- Fine Colonna 2 -->
@@ -108,6 +122,7 @@
         <!-- Fine Container -->
 
     </main>
-    
+
 </body>
+
 </html>
