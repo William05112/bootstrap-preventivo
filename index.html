@@ -102,7 +102,7 @@
                             <label for="select" class="form-label text-dark fs-5">Tipo di Lavoro</label>
                             <select class="form-select fs-5" id="select" aria-label="Seleziona il tipo di lavoro"
                                 required>
-                                <option selected disabled hidden>Seleziona il tipo di lavoro</option>
+                                <option value="" selected disabled hidden>Seleziona il tipo di lavoro</option>
                                 <option value="1">Backend Developement</option>
                                 <option value="2">Frontend Developement</option>
                                 <option value="3">Project Analysis</option>
@@ -123,11 +123,20 @@
                         </div>
 
                         <!-- Privacy Policy -->
-                        <div class="mb-3 form-check d-flex align-items-center " >
+                        <div class="mb-3 form-check d-flex align-items-center ">
                             <input type="checkbox" class="form-check-input me-2 fs-5" id="privacy-policy" required>
-                            <label for="privacy-policy" class="form-check-label text-dark fs-5">Accetto la Privacy Policy</label>
+                            <label for="privacy-policy" class="form-check-label text-dark fs-5">Accetto la Privacy
+                                Policy</label>
                             <!-- href="" target="_blank" da implementare -->
                         </div>
+
+                        <!-- Bottone di invio -->
+                        <div class="mb-3 d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary btn-lg fs-3 rounded-1 px-3 py-2">Calcola preventivo</button>
+                        </div>
+
+
+
 
 
 
