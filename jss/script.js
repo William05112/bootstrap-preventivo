@@ -1,41 +1,5 @@
-// Elementi del DOM
-const nome = document.getElementById("nome");
-const cognome = document.getElementById("cognome");
-const email = document.getElementById("email");
-const tipoLavoro = document.getElementById("tipo-di-lavoro");
-const textArea = document.getElementById("text-area");
-const codicePromozionale = document.getElementById("codice-promozionale");
-
-console.log(nome, cognome, email, tipoLavoro, textArea, codicePromozionale);
-
-let datiUtente = [] ;
-
-
-
-// Funzione per aggiornare i dati dell'utente
-function aggiornaDatiUtente() {
-    datiUtente.nome = nome.value;
-    datiUtente.cognome = cognome.value;
-    datiUtente.email = email.value;
-    datiUtente.tipoLavoro = tipoLavoro.value;
-    datiUtente.messaggio = textArea.value;
-    datiUtente.codicePromozionale = codicePromozionale.value;
-
-    console.log("Dati utente aggiornati:", datiUtente);
-}
-
-// Aggiungi un listener per aggiornare i dati ogni volta che un campo cambia
-[nome, cognome, email, tipoLavoro, textArea, codicePromozionale].forEach(element => {
-    element.addEventListener("input", aggiornaDatiUtente);
-});
-
-
-
-
 const form = document.querySelector("form");
 console.log(form);
-
-
 
 form.addEventListener("submit", function(event) {
     event.preventDefault();
