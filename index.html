@@ -58,6 +58,7 @@
     </header>
     <!-- Fine Header -->
 
+    <!-- Main -->
     <main class="mb-5">
 
         <!-- Container -->
@@ -71,7 +72,8 @@
 
                     <div>
                         <h2 class="fs-2 ">Richiesta Preventivo</h2>
-                        <p class="fs-5">Compila il form per richiedere un preventivo per i nostri servizi di sviluppo.</p>
+                        <p class="fs-5">Compila il form per richiedere un preventivo per i nostri servizi di sviluppo.
+                        </p>
                     </div>
 
                     <!-- Form -->
@@ -97,8 +99,8 @@
 
                         <!-- Select -->
                         <div class="mb-3">
-                            <label for="select" class="form-label text-dark fs-5">Tipo di Lavoro</label>
-                            <select class="form-select fs-5" id="select" aria-label="Seleziona il tipo di lavoro"
+                            <label for="tipo-di-lavoro" class="form-label text-dark fs-5">Tipo di Lavoro</label>
+                            <select class="form-select fs-5" id="tipo-di-lavoro" aria-label="Seleziona il tipo di lavoro"
                                 required>
                                 <option value="" selected disabled hidden>Seleziona il tipo di lavoro</option>
                                 <option value="1">Backend Developement</option>
@@ -128,40 +130,54 @@
                             <!-- href="" target="_blank" da implementare -->
                         </div>
 
-                        <!-- Bottone di invio -->
-                        <div class="mb-lg-5 mb-3 pb-lg-3 d-flex justify-content-center col-lg-6">
-                            <button type="submit" class="btn btn-primary btn-lg fs-3 rounded-2 px-3 py-2">Calcola
-                                preventivo</button>
+                        <!-- Row del risultato -->
+                        <div class="row justify-content-center">
+
+                            <!-- Bottone di invio -->
+                            <div class="col-12 col-lg-4 d-flex justify-content-center mb-3 mb-lg-5 mr-lg-5 mr-ld-5">
+                                <button type="submit" class="btn btn-primary btn-lg fs-3 rounded-2 px-3 py-2"  style="white-space: nowrap;" >Calcola
+                                    preventivo</button>
+                            </div>
+
+                            <!-- Prezzo Finale -->
+                            <div id="prezzo-final-container" class="col-12 col-lg-4 d-flex justify-content-center align-items-center flex-column mb-lg-5">
+                                <p id="prezzo-finale" class="fs-4 fw-bold mb-0  ">Prezzo finale</p>
+                                <p id="importo-prezzo" class="fs-4 fw-bold"></p>
+                            </div>
+
                         </div>
+                        <!-- Fine Row del risultato -->
+
 
                     </form>
                     <!-- Fine Form -->
 
+
                 </div>
                 <!-- Fine Colonna 1 -->
 
-                 <!-- Colonna 2 -->
-                  <div class="col-12 col-lg-4 mb-5">
+                <!-- Colonna 2 -->
+                <div class="col-12 col-lg-4 mb-5">
                     <div class="card">
                         <img src="https://placehold.co/300x200/d3d3d3/FFFFFF?text=300 x 200
                         " class="card-img-top" alt="Immagine segnaposto">
 
 
                         <div class="card-body">
-                          <h5 class="card-title fs-4">I nostri contatti</h5>
-                          <p class="card-text">se hai bisogno di aiuto puoi contattarci:</p>
+                            <h5 class="card-title fs-4">I nostri contatti</h5>
+                            <p class="card-text">se hai bisogno di aiuto puoi contattarci:</p>
                         </div>
                         <ul class="list-group list-group-flush ">
-                          <li class="list-group-item">help@boolfactory.test</li>
-                          <li class="list-group-item">+1122334455</li>
+                            <li class="list-group-item">help@boolfactory.test</li>
+                            <li class="list-group-item">+1122334455</li>
                         </ul>
                         <div class="card-body">
-                          <a href="#" class="card-link">Help desk</a>
+                            <a href="#" class="card-link">Help desk</a>
                         </div>
-                      </div>
-                  </div>
-                  
-                 <!-- Fine Colonna2 -->
+                    </div>
+                </div>
+
+                <!-- Fine Colonna2 -->
 
             </div>
             <!-- Fine Row -->
@@ -170,14 +186,19 @@
         <!-- Fine Container -->
 
     </main>
+    <!-- Fine Main -->
+
+    <!-- Footer -->
     <footer class="bg-dark text-white py-5">
         <div class="container">
-          <p class="mb-0 text-center fs-5">&#169;
-            2024 - Tutti i diritti riservati</p>
+            <p class="mb-0 text-center fs-5">&#169;
+                2024 - Tutti i diritti riservati</p>
         </div>
-      </footer>
-      
+    </footer>
+    <!-- Fine Footer -->
 
+    <!-- Script -->
+    <script src="./jss/script.js"></script>
 </body>
 
 </html>
