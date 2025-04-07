@@ -50,9 +50,12 @@ form.addEventListener("submit", function (event) {
 
     if (sconto === 0 && codicePromozionaleTagliato !== "") {
         alert("CODICE ERRATO");
-    }
 
-// In caso si voglia implementare un messaggio permanente in pagina ho creato un ciclo if con ilmessaggio collegato al paragrafo, al momento lo tengo commentato perchè ho preferito comunicare solo l'alert con il codice errato e avere i valori che si azzerano al submit del form
+    }
+     
+
+// Data la possibilità dell'utente di non inserire un codice promozionale ho optato per un'alert, avvisa l'utente di aver inserito un codice errato, senza però bloccare l'invio del form. Ho predisposto comunque la possibilità di far apparire un messaggio per avvisare l'utente con il relativo ciclo if. Il messagio mi sembrava incoerente a livello estetico dato il reset di tutti gli altri campi del form. Ho ipotizzato varie soluzioni a seconda delle necessità e ho lasciato questo commento se ci fosse la necessità di cambiare qualcosa.
+
 
     // const messaggioCodice = document.getElementById("messaggio-codice");
 
@@ -65,7 +68,8 @@ form.addEventListener("submit", function (event) {
     //     alert(`CODICE ERRATO`)
     // }
 
-    // Reset del form dopo invio in caso il form ad ogni invio ricominci da zero (opzione che posso eliminare e lasciare i valori inseriti in pagina)
+    // Reset del form dopo invio in caso il form ad ogni invio ricominci da zero (opzione che posso eliminare e lasciare i valori inseriti in pagina) potevo usare .style.display (e spostare il risultato fuori dal form) ma per motivi didattici ho preferito farlo manualmente.
+    
     const selectTipoLavoro = document.getElementById("tipo-di-lavoro");
     selectTipoLavoro.selectedIndex = 0
 
